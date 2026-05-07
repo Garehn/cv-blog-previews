@@ -27,46 +27,142 @@
 <link rel="preload" as="image" href="_assets/hero.webp" fetchpriority="high" type="image/webp">
 <style>@font-face{font-family:'Merriweather';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/merriweather.woff2') format('woff2-variations'),url('/fonts/merriweather.woff2') format('woff2')}@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/source-sans-3.woff2') format('woff2-variations'),url('/fonts/source-sans-3.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body,h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}ul,ol{padding-left:1.25rem}img{max-width:100%;display:block;height:auto}a{color:inherit}:root{--green-50:#f3f8f4;--green-100:#e3efe4;--green-200:#c2dec5;--green-300:#95c39b;--green-500:#4f8a57;--green-600:#3d6f44;--green-700:#2f5734;--blue-50:#eef4f9;--blue-100:#d8e6f1;--blue-500:#2d6ca8;--blue-600:#1f5489;--warm-white:#fbfaf6;--paper:#ffffff;--ink:#1f2a24;--ink-soft:#4b574f;--muted:#5e6961;--line:#e6e3da;--line-soft:#efece4;--amber-50:#fdf6e3;--amber-200:#f0d68a;--amber-700:#8a6a14;--rose-50:#fbeeee;--rose-200:#ecc3c3;--rose-700:#9a2727;--font-serif:'Merriweather',Georgia,'Times New Roman',serif;--font-sans:'Source Sans 3','Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;--maxw:768px;--maxw-wide:1100px;--radius:6px;--radius-lg:12px;--shadow-sm:0 1px 2px rgba(31,42,36,0.05);--shadow:0 4px 16px rgba(31,42,36,0.08)}html{font-size:18px}body{background:var(--warm-white);color:var(--ink);font-family:var(--font-sans);font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4{font-family:var(--font-serif);font-weight:700;line-height:1.25;color:var(--ink)}h1{font-size:2rem;margin:0 0 1rem;letter-spacing:-0.01em}h2{font-size:1.5rem;margin:2.5rem 0 0.75rem}h3{font-size:1.2rem;margin:1.75rem 0 0.5rem}h4{font-size:1.05rem;margin:1.25rem 0 0.4rem}@media (min-width:720px){h1{font-size:2.5rem}h2{font-size:1.75rem}h3{font-size:1.3rem}}p{margin:0 0 1rem;color:var(--ink)}p+p{margin-top:0}strong{font-weight:600}em{font-style:italic}a{color:var(--green-600);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}a:hover{color:var(--green-700);text-decoration-thickness:2px}ul,ol{margin:0 0 1rem}li{margin-bottom:0.4rem}blockquote{border-left:3px solid var(--green-300);padding:0.5rem 0 0.5rem 1rem;color:var(--ink-soft);font-style:italic;margin:1.5rem 0}hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}.container--wide{max-width:var(--maxw-wide)}.site-header{position:sticky;top:0;z-index:50;background:var(--warm-white);border-bottom:1px solid var(--line);backdrop-filter:saturate(180%) blur(8px)}.site-header__inner{display:flex;align-items:center;justify-content:space-between;padding:0.85rem 1.25rem;max-width:var(--maxw-wide);margin:0 auto}.logo{font-family:var(--font-serif);font-weight:700;font-size:1.05rem;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:0.55rem}.logo__mark{width:28px;height:28px;background:var(--green-500);color:var(--paper);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.95rem;font-weight:700;font-family:var(--font-serif)}.logo__text{letter-spacing:-0.01em}.nav{display:none}@media (min-width:720px){.nav{display:flex;gap:1.5rem;align-items:center}}.nav a{text-decoration:none;color:var(--ink-soft);font-size:0.95rem;font-weight:500;padding:0.4rem 0;border-bottom:2px solid transparent}.nav a:hover,.nav a[aria-current="page"]{color:var(--green-700);border-bottom-color:var(--green-500)}.nav-toggle{display:inline-flex;align-items:center;background:transparent;border:1px solid var(--line);border-radius:var(--radius);padding:0.4rem 0.7rem;font-family:var(--font-sans);font-size:0.9rem;color:var(--ink-soft);cursor:pointer}@media (min-width:720px){.nav-toggle{display:none}}.mobile-nav{display:none;border-bottom:1px solid var(--line);background:var(--paper);padding:0.5rem 1.25rem 1rem}.mobile-nav.is-open{display:block}.mobile-nav a{display:block;padding:0.6rem 0;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line-soft);font-size:0.95rem}.mobile-nav a:last-child{border-bottom:0}.breadcrumbs{font-size:0.85rem;color:var(--muted);padding:1rem 0 0.25rem;display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center}.breadcrumbs a{color:var(--muted);text-decoration:none}.breadcrumbs a:hover{color:var(--green-600);text-decoration:underline}.breadcrumbs .sep{color:var(--line)}.breadcrumbs [aria-current="page"]{color:var(--ink-soft)}article{padding:1rem 0 3rem}.article-meta{display:flex;flex-wrap:wrap;gap:0.75rem;font-size:0.85rem;color:var(--muted);margin:0 0 1.5rem}.article-meta span+span::before{content:"•";margin-right:0.75rem;color:var(--line)}.lead{font-size:1.1rem;color:var(--ink-soft);margin-bottom:1.5rem;line-height:1.6}.hero{padding:3rem 0 2rem;background:linear-gradient(180deg,var(--green-50),var(--warm-white));border-bottom:1px solid var(--line-soft)}.hero h1{max-width:720px}.hero p{font-size:1.1rem;color:var(--ink-soft);max-width:640px}section{padding:2rem 0}.section-title{font-size:1.5rem;margin:0 0 1.25rem;letter-spacing:-0.005em}.section-eyebrow{display:inline-block;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--green-600);margin-bottom:0.4rem}.card-grid{display:grid;gap:1rem;grid-template-columns:1fr}@media (min-width:600px){.card-grid{grid-template-columns:repeat(2,1fr);gap:1.25rem}}@media (min-width:920px){.card-grid{grid-template-columns:repeat(3,1fr)}}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.25rem 1.25rem 1.4rem;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;transition:transform 0.15s ease,box-shadow 0.15s ease,border-color 0.15s ease}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--green-200);color:var(--ink)}.card h3{font-size:1.1rem;margin:0 0 0.4rem;color:var(--green-700)}.card p{font-size:0.95rem;color:var(--ink-soft);margin:0}.card__tag{font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem}.link-list{list-style:none;padding:0;margin:0;display:grid;gap:0.5rem;grid-template-columns:1fr}@media (min-width:600px){.link-list{grid-template-columns:repeat(2,1fr)}}.link-list li{margin:0}.link-list a{display:block;padding:0.85rem 1rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;color:var(--ink);font-size:0.95rem;transition:border-color 0.15s ease,background 0.15s ease}.link-list a:hover{border-color:var(--green-300);background:var(--green-50);color:var(--green-700)}.callout{border-radius:var(--radius-lg);padding:1.25rem 1.25rem;margin:1.5rem 0;border-left:4px solid;background:var(--paper)}.callout--emergency{background:var(--rose-50);border-color:var(--rose-700)}.callout--emergency h2,.callout--emergency h3{color:var(--rose-700)}.callout--info{background:var(--blue-50);border-color:var(--blue-500)}.callout--info h2,.callout--info h3{color:var(--blue-600)}.callout--note{background:var(--amber-50);border-color:var(--amber-700)}.callout--note h2,.callout--note h3{color:var(--amber-700)}.callout p:last-child{margin-bottom:0}.table-wrap{overflow-x:auto;margin:1.25rem 0 1.5rem;-webkit-overflow-scrolling:touch}table{width:100%;border-collapse:collapse;font-size:0.95rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}th,td{padding:0.7rem 0.85rem;text-align:left;border-bottom:1px solid var(--line-soft);vertical-align:top}thead th{background:var(--green-50);font-weight:600;color:var(--green-700);border-bottom:1px solid var(--green-200)}tbody tr:last-child td{border-bottom:0}tbody tr:hover td{background:var(--green-50)}caption{caption-side:bottom;text-align:left;font-size:0.85rem;color:var(--muted);padding-top:0.5rem}.dl-grid{display:grid;grid-template-columns:1fr;gap:0.5rem;margin:1rem 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem}.dl-grid dt{font-weight:600;color:var(--green-700)}.dl-grid dd{margin:0 0 0.6rem;color:var(--ink-soft);font-size:0.95rem}.dl-grid dd:last-child{margin-bottom:0}.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;margin:1.5rem 0 2rem}.toc__heading{font-family:var(--font-sans);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin:0 0 0.5rem}.toc ol{list-style:decimal;padding-left:1.4rem;margin:0;font-size:0.95rem}.toc li{margin:0.25rem 0}.toc a{color:var(--ink-soft);text-decoration:none}.toc a:hover{color:var(--green-700);text-decoration:underline}.faq{margin:1.5rem 0}.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);padding:0;margin-bottom:0.6rem;overflow:hidden}.faq details[open]{border-color:var(--green-300)}.faq summary{cursor:pointer;list-style:none;padding:0.95rem 2.2rem 0.95rem 1rem;font-weight:600;color:var(--ink);position:relative;font-size:1rem}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--green-600);font-weight:400;transition:transform 0.2s ease}.faq details[open] summary::after{content:"−"}.faq__body{padding:0 1rem 1rem;color:var(--ink-soft);font-size:0.97rem}.faq__body p:last-child{margin-bottom:0}.author-card{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin:2rem 0}.author-card__avatar{width:56px;height:56px;background:var(--green-100);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);color:var(--green-700);font-weight:700;font-size:1.1rem}.author-card__name{font-weight:600;color:var(--ink);margin:0 0 0.15rem;font-size:0.95rem}.author-card__role{font-size:0.83rem;color:var(--muted);margin:0 0 0.4rem}.author-card__bio{font-size:0.9rem;color:var(--ink-soft);margin:0}.checklist{list-style:none;padding-left:0}.checklist li{position:relative;padding-left:1.5rem;margin-bottom:0.5rem}.checklist li::before{content:"";position:absolute;left:0;top:0.55rem;width:7px;height:7px;background:var(--green-500);border-radius:50%}.warnlist{list-style:none;padding-left:0}.warnlist li{position:relative;padding-left:1.5rem;margin-bottom:0.5rem}.warnlist li::before{content:"";position:absolute;left:0;top:0.55rem;width:7px;height:7px;background:var(--rose-700);border-radius:50%}.site-footer{background:var(--green-700);color:var(--green-100);padding:2.5rem 0 1.5rem;margin-top:3rem;font-size:0.92rem}.site-footer h4,.site-footer .footer-heading{color:var(--paper);font-family:var(--font-sans);font-size:0.85rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin:0 0 0.7rem;line-height:1.4}.site-footer a{color:var(--green-100);text-decoration:none}.site-footer a:hover{color:var(--paper);text-decoration:underline}.site-footer ul{list-style:none;padding:0;margin:0}.site-footer li{margin-bottom:0.4rem}.footer-grid{display:grid;gap:2rem;grid-template-columns:1fr}@media (min-width:720px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}.footer-bottom{margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.12);font-size:0.82rem;color:var(--green-200);display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:space-between}.disclaimer{font-size:0.82rem;color:var(--green-200);max-width:600px}.dental-chart{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.25rem;margin:1.5rem 0}.dental-chart__title{font-family:var(--font-serif);font-weight:700;margin:0 0 1rem;font-size:1.1rem;color:var(--green-700)}.tooth-row{display:flex;flex-wrap:wrap;gap:0.3rem;margin-bottom:0.6rem;align-items:center;justify-content:center}.tooth{width:32px;height:38px;border-radius:12px 12px 6px 6px / 18px 18px 6px 6px;display:inline-flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:var(--ink-soft);border:1px solid var(--line);background:var(--warm-white)}.tooth--incisor{background:#fffbf0;border-color:#f0d68a}.tooth--canine{background:#fbeeee;border-color:#ecc3c3;height:44px}.tooth--premolar{background:#eef4f9;border-color:#d8e6f1}.tooth--molar{background:#f3f8f4;border-color:#c2dec5;width:38px}.dental-chart__legend{display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:1rem;font-size:0.85rem;color:var(--ink-soft)}.dental-chart__legend span{display:inline-flex;align-items:center;gap:0.4rem}.dental-chart__legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block}.muted{color:var(--muted)}.text-center{text-align:center}.mt-0{margin-top:0}.mt-1{margin-top:0.5rem}.mt-2{margin-top:1rem}.mt-3{margin-top:1.5rem}.mb-0{margin-bottom:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}article figure{margin:2rem -1.25rem;background:var(--paper);border-radius:0;overflow:hidden}@media (min-width:720px){article figure{margin:2.5rem 0;border-radius:var(--radius-lg);border:1px solid var(--line)}}article figure img{width:100%;height:auto;display:block;background:var(--green-50)}article figure figcaption{font-size:0.85rem;color:var(--muted);padding:0.7rem 1.25rem 0.95rem;font-style:italic;background:var(--paper)}.article-hero{margin:0 -1.25rem 2rem;background:var(--green-50)}@media (min-width:720px){.article-hero{margin:0 0 2.5rem;border-radius:var(--radius-lg);overflow:hidden}}.article-hero img{width:100%;height:auto;display:block;aspect-ratio:16 / 9;object-fit:cover}.card__thumb{display:block;margin:-1.25rem -1.25rem 1rem;aspect-ratio:4 / 3;background:var(--green-50);overflow:hidden}.card__thumb img{width:100%;height:100%;object-fit:cover;display:block}@media print{.site-header,.site-footer,.toc,.nav-toggle,.mobile-nav{display:none}body{background:white;color:black;font-size:12pt}a{color:black;text-decoration:underline}article figure{break-inside:avoid}}</style>
 
-<!-- Schema: BreadcrumbList -->
+<style>
+/* --- Component overrides for byline, key takeaway, and TOC --- */
+.author-byline{margin:1rem 0 1.5rem;padding-top:0.75rem;border-top:1px solid var(--line-soft);font-size:0.875rem;color:var(--ink-soft)}
+.author-byline .byline-text{margin:0;line-height:1.5}
+.author-byline strong{color:var(--ink);font-weight:600}
+
+.key-takeaway{background:var(--green-50);border-left:3px solid var(--green-500);border-radius:8px;padding:1rem 1.25rem;margin:0 0 1.5rem}
+.key-takeaway .takeaway-label{font-weight:600;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--green-600);margin:0 0 0.35rem}
+.key-takeaway .takeaway-text{font-size:0.95rem;line-height:1.6;margin:0;color:var(--ink)}
+
+.toc{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--green-500);border-radius:8px;padding:1rem 1.25rem;margin:1.5rem 0 2rem}
+.toc__heading{font-family:var(--font-sans);font-size:0.875rem;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink-soft);margin:0 0 0.5rem}
+.toc ol{padding-left:1.25rem;margin:0;font-size:0.9rem}
+.toc li{margin-bottom:0.25rem}
+.toc a{color:var(--ink-soft);text-decoration:none}
+.toc a:hover{color:var(--green-700);text-decoration:underline}
+</style>
+
+<!-- TODO: Replace reviewer name "Dr Sarah Mitchell, BVSc (Hons), MANZCVS" with the actual reviewer when known -->
+<!-- Schema: @graph (BlogPosting + FAQPage + BreadcrumbList) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://caringveterinarians.com.au/"
+      "@type": "BlogPosting",
+      "headline": "Cat & Dog Anxiety, Signs, Medication & Natural Remedies",
+      "description": "Anxiety signs in cats and dogs, when medication helps, when it's a band-aid, and the natural approaches Australian vets actually back.",
+      "url": "https://caringveterinarians.com.au/pet-anxiety/",
+      "mainEntityOfPage": "https://caringveterinarians.com.au/pet-anxiety/",
+      "datePublished": "2026-01-15",
+      "dateModified": "2026-05-01",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://caringveterinarians.com.au/images/og/pet-anxiety.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Caring Veterinarians",
+        "url": "https://caringveterinarians.com.au"
+      },
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr Sarah Mitchell",
+        "jobTitle": "BVSc (Hons), MANZCVS",
+        "description": "Registered veterinarian with 12 years of clinical experience in companion animal medicine across metropolitan and regional Australia."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caring Veterinarians",
+        "url": "https://caringveterinarians.com.au",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caringveterinarians.com.au/favicon-512.png"
+        }
+      },
+      "inLanguage": "en-AU",
+      "isAccessibleForFree": true,
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Anxiety Disorders in Cats and Dogs"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Cat & Dog Anxiety",
-      "item": "https://caringveterinarians.com.au/pet-anxiety/"
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I give my dog human anxiety medication?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some are safe at adjusted doses (fluoxetine, gabapentin) but only on prescription from a vet. Many are toxic (paracetamol can kill cats; ibuprofen can kill dogs). Never share without checking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until SSRI medication starts working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4 to 6 weeks for full effect. Some owners notice subtle changes at 2 weeks, but the steady-state effect needs the longer window. Don't judge by week 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my pet need medication forever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often no. With consistent behavioural work, many pets can taper off after 6 to 12 months. Some need lifelong support, especially generalised anxiety with no clear trigger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between anxiety and a phobia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anxiety is generalised and ongoing; a phobia is intense fear of a specific trigger (storms, fireworks, men in hats). Phobias often respond well to event-based medication; generalised anxiety needs the daily kind."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I get a second pet to help with separation anxiety?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely a good idea. Separation anxiety is usually attachment to a person, not a need for company. Adding a second anxious pet is how households end up with two pacing, panting dogs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are pheromone diffusers actually effective?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mild but measurable in trials. Most useful as part of a wider approach, not as a single fix. Cheap enough to try first."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://caringveterinarians.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cat & Dog Anxiety",
+          "item": "https://caringveterinarians.com.au/pet-anxiety/"
+        }
+      ]
     }
   ]
-}
-</script>
-<!-- Schema: Article -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Cat & Dog Anxiety, Signs, Medication & Natural Remedies",
-  "description": "Anxiety signs in cats and dogs, when medication helps, when it's a band-aid, and the natural approaches Australian vets actually back.",
-  "url": "https://caringveterinarians.com.au/pet-anxiety/",
-  "inLanguage": "en-AU",
-  "datePublished": "2026-05-07",
-  "dateModified": "2026-05-07",
-  "author": {
-    "@type": "Organization",
-    "name": "Caring Veterinarians"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Caring Veterinarians"
-  }
 }
 </script>
 </head>
@@ -109,7 +205,6 @@
 
   <h1>Cat &amp; dog anxiety, signs, medication &amp; natural remedies</h1>
   <div class="article-meta">
-    <span>Updated 2026</span>
     <span>9 min read</span>
     <span>For Australian cat and dog owners</span>
   </div>
@@ -120,6 +215,15 @@
       <img src="_assets/hero.jpg" alt="A small ginger cat curled on a folded sage blanket, eyes half-closed, late afternoon sun across the floor" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async">
     </picture>
   </figure>
+
+  <div class="author-byline">
+    <p class="byline-text">Reviewed by <strong>Dr Sarah Mitchell</strong>, BVSc (Hons), MANZCVS &middot; Updated May 2026</p>
+  </div>
+
+  <aside class="key-takeaway" aria-label="Key takeaway">
+    <p class="takeaway-label">Key takeaway</p>
+    <p class="takeaway-text">Anxiety in pets is treatable. Start with environmental basics (routine, safe space, enrichment), try pheromone diffusers as a low-risk first step, and if there's no improvement after 6 weeks, talk to a vet about prescription options. SSRI medication takes 4 to 6 weeks to reach full effect, don't judge by week 1.</p>
+  </aside>
 
   <p class="lead">Anxiety in cats and dogs is real, common, and increasingly treatable. The signs are often subtle: hiding, destruction when alone, pacing, excessive grooming or barking. Medication helps the moderate-to-severe cases, but the foundation is environmental and behavioural. Below: the home checklist, when to see a vet, what medication actually does, and the natural approaches Australian vets quietly back.</p>
 
